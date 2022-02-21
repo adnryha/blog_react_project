@@ -1,32 +1,35 @@
 import React from 'react'
-import { Navbar, Nav, Button } from 'react-bootstrap'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
+import { Navbar, Nav } from 'react-bootstrap'
+
+import Logo from '../images/logo.png'
+import "./NaviBar.css"
 
 export default function NaviBar() {
   return (
     <>
+      <div className='navbar-container'>
+        <div className='nav-content'>
+          <Navbar collapseOnSelect expand='lg' bg='light' variant="light">
+            <Navbar.Brand className='mo-5 logo-item'>
+              <img className='logo-image' src={Logo} alt='logo' />
 
-      <Navbar collapseOnSelect expand='lg' bg='light' variant="light">
-        <Navbar.Brand>
-          <img className='logo-image' src='/images/logo.png' alt='logo-image' />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <Navbar.Collapse id='responsive-navbar-nav'>
+              <Nav className='menu-link'>
+                <Nav.Link bsStyle="menu-link--item">НOME</Nav.Link>
+                <Nav.Link className='menu-link--item'>ABOUT</Nav.Link>
+                <Nav.Link className='menu-link--item'>CLASESS</Nav.Link>
+                <Nav.Link className='menu-link--item'>PRICES</Nav.Link>
+              </Nav>
 
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='mr-auto'>
-            <Nav.Link>НOME</Nav.Link>
-            <Nav.Link>ABOUT</Nav.Link>
-            <Nav.Link>CLASESS</Nav.Link>
-            <Nav.Link>PRICES</Nav.Link>
-          </Nav>
-          <Button variant='secondary' size='sm' className='me-2'>Log in</Button>
-          <Button variant='secondary' size='sm'  >Sign out</Button>
-        </Navbar.Collapse >
-      </Navbar >
-      <Container fluid >
+            </Navbar.Collapse >
+          </Navbar >
+        </div>
+      </div>
 
-      </Container>
+
+
     </>
 
 

@@ -1,10 +1,11 @@
 import React from 'react'
-import Slider from '././Components/Slider'
-import NaviBar from './Components/NaviBar'
+import Slider from '././Components/Slider/Slider'
+import NaviBar from './Components/NaviBar/NaviBar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import './App.css'
-import SliderTeam from './Components/SliderTeam'
+import SliderTeam from './Components/SliderTeam/SliderTeam'
+
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         < NaviBar />
         <Slider />
         <SliderTeam />
+
       </Container>
     </>
   );

@@ -1,0 +1,24 @@
+.wrapper-container {
+    /* position: absolute;
+    margin: 10px auto; */
+    z-index: -1;
+
+    /*  */
+}
+.wrapper-row {
+    margin: 20px 0px 20px 0px;
+    background-image: url('../../images/carousel_team/layout-team.jpg');
+}
+
+.trener-name {
+    color: white;
+    font-size: 25px;
+    overflow-y: hidden;
+    background-color: red;
+    border-radius: 4px;
+}
+.image-slider {
+    opacity: 0.7;
+    margin: 10px auto;
+    border-radius: 7px;
+}

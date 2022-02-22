@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.navbar-container {
+    position: absolute;
+    margin-top: 1em;
+    width: 100vw;
+    opacity: 0.6;
+}
+.menu-link {
+    margin-left: 30em;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-link :hover {
+    background-color: red;
+    border-radius: 4px;
+}
+.logo-image {
+    margin-left: 15em;
+}
